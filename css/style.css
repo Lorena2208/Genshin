@@ -1,0 +1,833 @@
+/* Base do site */
+
+@font-face {
+    font-family: 'HYImpact-Regular';
+    src: url(../font/HYImpact-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HYImpact-Regular';
+}
+
+#fundo_inicio {
+    background-color: rgb(255, 255, 229);
+}
+
+.cabecalho {
+    background-color: #000000;
+}
+
+.cabecalho img {
+    width: 125px;
+}
+
+.cabecalho .header {
+    /* alinhar os itens: logo e menu inteiro*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu ul {
+    /* alinhar os itens horizontalmente */
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 20px;
+    transition: all .3s linear;
+}
+
+.menu ul li:hover {
+    background-color: rgb(55, 34, 118);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu .submenu {
+    /* esconder o submenu */
+    display: none;
+    background-color: #000;
+    position: absolute;
+    width: 150px;
+    align-items: center;
+    margin: -20px;
+    margin-top: 20px;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.divisor {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.curiosidades {
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.curiosidades li {
+    padding: 15px;
+}
+
+/* Início */
+
+.bg_video {
+    opacity: 0.8;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+}
+
+#logo {
+    width: 800px;
+    position: absolute;
+    top: 300px;
+    right: 350px;
+}
+
+.introducao {
+    margin-top: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introducao h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    text-align: justify;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.introducao #img_1 {
+    width: 700px;
+    display: block;
+    float: left;
+    padding: 22px;
+}
+
+.introducao #img_2 {
+    width: 700px;
+    display: block;
+    float: right;
+    padding: 22px;
+}
+
+/* Regiões */
+
+#fundo_mapa {
+    background-image: url(../img/login_gate.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(4px);
+}
+
+#mapa {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mapa h1 {
+    color: rgb(243, 255, 253);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#mond {
+    color: rgb(255, 253, 215);
+    position: absolute;
+    top: 370px;
+    right: 490px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(180, 157, 112);
+}
+
+#liyue {
+    color: rgb(255, 253, 215);
+    position: absolute;
+    bottom: 750px;
+    right: 680px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(180, 157, 112);
+}
+
+#sumeru {
+    color: rgb(255, 253, 215);
+    position: absolute;
+    bottom: 650px;
+    left: 500px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(180, 157, 112);
+}
+
+#inazuma {
+    color: rgb(255, 253, 215);
+    position: absolute;
+    bottom: 400px;
+    right: 350px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(180, 157, 112);
+}
+
+.mapa {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+/* Página Mondstadt */
+
+#fundo_mond {
+    background-image: url(../img/Mondstadt/mondstadt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*  backdrop-filter: blur(4px); */
+}
+
+.mondstadt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+#img_m1 {
+    width: 600px;
+    float: left;
+    padding: 25px;
+}
+
+#img_m2 {
+    width: 600px;
+    float: right;
+    padding: 20px;
+}
+
+#img_m3 {
+    width: 600px;
+    float: right;
+    padding: 20px;
+}
+
+#img_m4 {
+    width: 550px;
+    float: left;
+    padding: 15px;
+}
+
+#img_m5 {
+    width: 500px;
+    float: left;
+    padding: 15px;
+}
+
+.mondstadt h1 {
+    color: rgb(179, 234, 225);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.mondstadt h2 {
+    color: rgb(179, 234, 225);
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.mondstadt p {
+    color: rgb(179, 234, 225);
+    text-align: justify;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.mondstadt #fotos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.mondstadt #fotos .container img {
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.mondstadt #fotos .container img:hover {
+    transform: scale(0.9);
+}
+
+#c_mond {
+    color: rgb(179, 234, 225);
+}
+
+/* Página Liyue */
+
+#fundo_liyue {
+    background-image: url(../img/Liyue/Liyue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(4px); */
+}
+
+.liyue {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.liyue h1 {
+    color: rgb(245, 252, 189);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.liyue h2 {
+    color: rgb(245, 252, 189);
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.liyue p {
+    color: rgb(245, 252, 189);
+    text-align: justify;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#img_l0 {
+    width: 550px;
+    float: right;
+    padding: 15px;
+}
+
+
+#img_l {
+    width: 550px;
+    float: left;
+    padding: 15px;
+}
+
+#img_l1 {
+    width: 500px;
+    float: right;
+    padding: 15px;
+}
+
+#img_l2 {
+    width: 650px;
+    float: left;
+    padding: 15px;
+}
+
+
+#img_l3 {
+    width: 450px;
+    float: right;
+    padding: 15px;
+}
+
+#img_l4 {
+    width: 650px;
+    float: left;
+    padding: 15px;
+}
+
+#img_l5 {
+    width: 700px;
+    float: right;
+    padding: 15px;
+}
+
+.liyue #fotos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.liyue #fotos .container img {
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.liyue #fotos .container img:hover {
+    transform: scale(0.9);
+}
+
+#c_liyue {
+    color: rgb(245, 252, 189);
+}
+
+/* Página Inazuma */
+
+#fundo_inazuma {
+    background-image: url(../img/Inazuma/Inazuma_city.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*  backdrop-filter: blur(4px); */
+}
+
+.inazuma {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+#img_i1 {
+    width: 500px;
+    float: left;
+    padding: 15px;
+}
+
+#img_i2 {
+    width: 650px;
+    float: right;
+    padding: 15px;
+}
+
+#img_i3 {
+    width: 500px;
+    float: left;
+    padding: 15px;
+}
+
+#img_i4 {
+    width: 600px;
+    float: right;
+    padding: 15px;
+}
+
+#img_i5 {
+    width: 373px;
+    float: left;
+    padding: 15px;
+}
+
+#img_i6 {
+    width: 350px;
+    float: right;
+    padding: 15px;
+}
+
+#img_i7 {
+    width: 650px;
+    float: left;
+    padding: 17px;
+}
+
+.inazuma h1 {
+    color: rgb(219, 191, 251);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.inazuma h2 {
+    color: rgb(219, 191, 251);
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.inazuma p {
+    color: rgb(219, 191, 251);
+    text-align: justify;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.inazuma #fotos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.inazuma #fotos .container img {
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.inazuma #fotos .container img:hover {
+    transform: scale(0.9);
+}
+
+#c_inazuma {
+    color: rgb(219, 191, 251);
+}
+
+/* Página Sumeru */
+
+#fundo_sumeru {
+    background-image: url(../img/Sumeru/Sumeru_City.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(4px); */
+}
+
+.sumeru {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.sumeru h1 {
+    color: rgb(189, 252, 191);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sumeru h2 {
+    color: rgb(189, 252, 191);
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.sumeru p {
+    color: rgb(189, 252, 191);
+    text-align: justify;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#img_s {
+    width: 550px;
+    float: right;
+    padding: 15px;
+}
+
+#img_s0 {
+    width: 550px;
+    float: left;
+    padding: 15px;
+}
+
+#img_s1 {
+    width: 600px;
+    float: right;
+    padding: 15px;
+}
+
+#img_s2 {
+    width: 650px;
+    float: left;
+    padding: 15px;
+}
+
+#img_s3 {
+    width: 600px;
+    float: right;
+    padding: 15px;
+}
+
+#img_s4 {
+    width: 700px;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#img_s5 {
+    width: 700px;
+    float: right;
+    padding: 15px;
+}
+
+#img_s6 {
+    width: 700px;
+    float: left;
+    padding: 20px;
+    margin-bottom: -5px;
+}
+#img_s7 {   
+    width: 500px;
+    float: right;
+    padding: 15px;
+}
+
+#img_s8 {
+    width: 650px;
+    float: right;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#img_s9 {   
+    width: 800px;
+    float: left;
+    padding: 15px;
+}
+
+.sumeru #fotos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.sumeru #fotos .container img {
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.sumeru #fotos .container img:hover {
+    transform: scale(0.9);
+}
+
+#c_sumeru {
+    color: rgb(189, 252, 191);
+}
+
+#t_sumeru img {
+    width: 150px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+#t_sumeru thead {
+    background-color: #004a26;
+    color: rgb(189, 252, 191);
+}
+
+#lema {
+    font-style: italic;
+}
+
+#linha1 {
+    background-color: rgb(189, 252, 191);
+    color: black;
+}
+
+#t_sumeru table td {
+    padding: 5px;
+}
+
+/* Galeria */
+
+#fundo_galeria {
+    background-image: url(../img/galeria/liyue2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.galeria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.galeria h1 {
+    color: rgb(255, 229, 143);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.galeria #fotos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.galeria #fotos .container img {
+    display: block;
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.galeria #fotos .container img:hover {
+    transform: scale(0.9);
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#videos iframe {
+    width: 100%;
+    height: 350px;
+}
+
+/* Personagens */
+
+#fundo_personagens {
+    background-image: url(../img/galeria/liyue2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.personagens {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    padding: 30px;
+}
+
+.personagens h1 {
+    color: rgb(255, 229, 143);
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.personagens h2 {
+    color: rgb(189, 252, 191);
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.personagens p {
+    color: rgb(189, 252, 191);
+    text-align: justify;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Rodapé */
+
+#rodape {
+    background-color: #363636;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+#rodape a{
+    color: #ffcefd;
+    text-decoration: none;
+}
