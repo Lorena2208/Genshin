@@ -231,7 +231,7 @@
 /* Página Mondstadt */
 
 #fundo_mond {
-    background-image: url(../img/Mondstadt/mondstadt.jpg);
+    background-image: url(../img/mondstadt/mondstadt.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -328,7 +328,7 @@
 /* Página Liyue */
 
 #fundo_liyue {
-    background-image: url(../img/Liyue/Liyue.jpg);
+    background-image: url(../img/liyue/liyue.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -440,7 +440,7 @@
 /* Página Inazuma */
 
 #fundo_inazuma {
-    background-image: url(../img/Inazuma/Inazuma_city.webp);
+    background-image: url(../img/inazuma/inazuma_city.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -550,7 +550,7 @@
 /* Página Sumeru */
 
 #fundo_sumeru {
-    background-image: url(../img/Sumeru/Sumeru_City.webp);
+    background-image: url(../img/sumeru/sumeru_city.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
